@@ -1,0 +1,30 @@
+{
+  "name": "@jenkshiny/gulp-manifest-replace",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jenkin Tang",
+    "email": "j1ngitom@gmail.com",
+    "url": "https://www.j1ngit.com/"
+  },
+  "description": "A gulp plugin that replace specified sources from manifes json.",
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "manifest",
+    "replace"
+  ],
+  "bugs": {
+    "url": "https://github.com/j1ngit/gulp-manifest-replace/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/j1ngit/gulp-manifest-replace.git"
+  },
+  "scripts": {},
+  "dependencies": {
+    "through2": "^0.6.5"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
