@@ -6,6 +6,6 @@
     "rev": "gulp replace --gulpfile gulpfile.js"
   },
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^4.0.0"
   }
 }

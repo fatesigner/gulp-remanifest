@@ -6,11 +6,11 @@ const path = require('path');
 const gulp = require('gulp');
 const replace = require('..');
 
-gulp.task('replace', function() {
+gulp.task('replace', async function () {
   const sourcesPath = path.join(__dirname, 'source');
   const outputPath = path.join(__dirname, 'output');
   const manifestJson = require(path.join(sourcesPath, 'manifest.json'));
-  gulp.src([
+  await gulp.src([
     path.join(sourcesPath, '*.txt'),
     path.join(sourcesPath, '*.html'),
     path.join(sourcesPath, '*.css'),

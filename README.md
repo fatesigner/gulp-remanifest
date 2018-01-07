@@ -1,4 +1,4 @@
-﻿# gulp-manifest-replace
+﻿# gulp-manifest-replace [![Build Status](https://travis-ci.com/jenkshiny/gulp-manifest-replace.svg?branch=master)](https://travis-ci.com/jenkshiny/gulp-manifest-replace) [![npm](https://img.shields.io/npm/v/@jenkshiny/gulp-manifest-replace.svg)](https://www.npmjs.com/package/@jenkshiny/gulp-manifest-replace)
 > A gulp plugin that replace specified sources from manifes json.
 
 **This plugin is an improved and maintained fork of [gulp-rev-replace](https://github.com/jamesknelson/gulp-rev-replace).**
