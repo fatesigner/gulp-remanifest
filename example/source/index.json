@@ -1,0 +1,9 @@
+{
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    }
+  ]
+}

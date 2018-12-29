@@ -1,0 +1,35 @@
+{
+  "name": "gulp-remanifest",
+  "version": "1.0.0",
+  "description": "A gulp plugin that replace specified sources from manifes json.",
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "manifest",
+    "replace"
+  ],
+  "author": {
+    "name": "Jeremy Tang",
+    "email": "fatesigner@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatesigner/gulp-remanifest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatesigner/gulp-remanifest/issues"
+  },
+  "scripts": {
+    "clean": "gulp clean --gulpfile build/tasks/clean.js",
+    "build": "gulp build --gulpfile build/tasks/build.js",
+    "test": "node_modules/.bin/mocha --timeout 10000 --recursive test/"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "del": "3.0.0",
+    "gulp": "4.0.0",
+    "mocha": "5.2.0",
+    "mochawesome": "3.1.1",
+    "through2": "3.0.0"
+  }
+}

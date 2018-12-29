@@ -1,0 +1,11 @@
+{
+  "name": "gulp-remanifest",
+  "version": "0.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "rev": "gulp replace --gulpfile gulpfile.js"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
