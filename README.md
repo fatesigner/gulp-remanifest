@@ -1,6 +1,31 @@
-﻿﻿# gulp-remanifest
+﻿# gulp-remanifest
 
->一个实现文件名hash值替换的gulp插件.
+[![build][travis-image]][travis-url]
+[![commitizen][commitizen-image]][commitizen-url]
+[![codecov][codecov-image]][codecov-url]
+[![prettier][prettier-image]][prettier-url]
+[![download][download-image]][download-url]
+[![npm][npm-image]][npm-url]
+[![semantic][semantic-image]][semantic-url]
+
+[npm-image]: https://img.shields.io/npm/v/gulp-remanifest.svg?color=blue&logo=npm
+[npm-url]: https://npmjs.com/package/gulp-remanifest
+[travis-image]: https://travis-ci.com/fatesigner/gulp-remanifest.svg?color=green&token=i21P7stb8bZPNjZakvsi&branch=master
+[travis-url]: https://travis-ci.com/fatesigner/gulp-remanifest
+[codecov-image]: https://codecov.io/gh/fatesigner/gulp-remanifest/branch/master/graph/badge.svg?&token=i5Q9N7m8v5
+[codecov-url]: https://codecov.io/gh/fatesigner/gulp-remanifest
+[david-image]: https://david-dm.org/fatesigner/gulp-remanifest.svg
+[david-url]: https://david-dm.org/fatesigner/gulp-remanifest
+[prettier-image]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?logo=prettier
+[prettier-url]: https://github.com/prettier/prettier
+[download-image]: https://img.shields.io/npm/dw/gulp-remanifest.svg?color=yellowgreen
+[download-url]: https://npmjs.com/package/gulp-remanifest
+[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-green.svg
+[commitizen-url]: http://commitizen.github.io/cz-cli/
+[semantic-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
+[semantic-url]: https://opensource.org/licenses/MIT
+
+一个实现文件名hash值替换的gulp插件.
 
 **此插件基于 [gulp-rev-replace](https://github.com/jamesknelson/gulp-rev-replace).**
 

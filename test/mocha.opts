@@ -1,0 +1,3 @@
+--recursive "test/**/*.spec.js"
+--reporter mochawesome
+--timeout=1000000

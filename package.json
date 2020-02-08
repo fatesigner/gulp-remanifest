@@ -1,7 +1,10 @@
 {
   "name": "gulp-remanifest",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A gulp plugin that replace specified sources from manifes json.",
+  "engines": {
+    "node": ">=8.9.0"
+  },
   "license": "MIT",
   "keywords": [
     "gulp",
@@ -19,17 +22,56 @@
   "bugs": {
     "url": "https://github.com/fatesigner/gulp-remanifest/issues"
   },
+  "homepage": "https://github.com/fatesigner/gulp-remanifest#readme",
+  "main": "index.js",
+  "module": "index.js",
   "scripts": {
-    "clean": "gulp clean --gulpfile build/tasks/clean.js",
-    "build": "gulp build --gulpfile build/tasks/build.js",
-    "test": "node_modules/.bin/mocha --timeout 10000 --recursive test/"
+    "release": "semantic-release",
+    "clean": "gulp clean --gulpfile build/gulpfile.js",
+    "build": "gulp build --gulpfile build/gulpfile.js",
+    "commit": "npx git cz",
+    "lint": "lint-staged",
+    "test": "nyc mocha"
   },
   "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@semantic-release/changelog": "5.0.0",
+    "@semantic-release/git": "9.0.0",
+    "@typescript-eslint/eslint-plugin": "2.7.0",
+    "@typescript-eslint/parser": "2.7.0",
+    "@vue/eslint-config-prettier": "5.0.0",
+    "@vue/eslint-config-standard": "4.0.0",
+    "babel-eslint": "10.0.3",
     "chai": "4.2.0",
-    "del": "3.0.0",
-    "gulp": "4.0.0",
-    "mocha": "5.2.0",
-    "mochawesome": "3.1.1",
-    "through2": "3.0.0"
+    "codecov": "3.6.1",
+    "commitizen": "4.0.3",
+    "cz-customizable": "6.2.0",
+    "del": "5.1.0",
+    "eslint": "6.6.0",
+    "eslint-config-prettier": "6.5.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-html": "6.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "find-config": "1.0.0",
+    "gulp": "4.0.2",
+    "husky": "4.2.1",
+    "lint-staged": "10.0.3",
+    "mocha": "6.2.2",
+    "mochawesome": "4.1.0",
+    "nyc": "14.1.1",
+    "prettier": "1.19.1",
+    "require-dir": "1.2.0",
+    "semantic-release": "17.0.2",
+    "through2": "3.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./scripts/cz-customizable"
+    }
   }
 }

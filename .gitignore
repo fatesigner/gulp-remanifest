@@ -14,10 +14,10 @@ release.md
 /test/**/dist
 coverage.lcov
 .npmpublish.md
+/.apk
 
 # compiled output
 /dist
-/static
 /tmp
 /temp
 .tmp
@@ -76,3 +76,13 @@ coverage.lcov
 Desktop.ini
 .DS_Store
 $RECYCLE.BIN/
+
+# ionic:
+/.ionic
+/.sass-cache
+/.sourcemaps
+/.versions
+/.vscode
+/platforms
+/plugins
+/www

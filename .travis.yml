@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  '10'
+notifications:
+  email:
+    on_success: never # default: change
+    on_failure: always # default: always
+install:
+  - npm install
+script:
+  - npm run clean
+  # build dist
+  - npm run build
+  # run test
+  - npm test
+after_success:
+  # run code coverage
+  - nyc report --reporter=lcov > coverage.lcov && codecov --token=42fe847c-6e51-4f9e-9e53-b6db6fb1c80c
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: npx semantic-release
+    on:
+      branch: master
