@@ -45,7 +45,20 @@ module.exports = {
     [
       '@semantic-release/changelog',
       {
-        changelogFile: 'CHANGELOG.md'
+        changelogFile: 'docs/CHANGELOG.md'
+      }
+    ],
+    [
+      '@semantic-release/git',
+      {
+        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
+        message: 'chore(🤖):${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
+      }
+    ],
+    [
+      '@semantic-release/github',
+      {
+        // assets: 'dist/!*.tgz'
       }
     ],
     [
@@ -54,20 +67,6 @@ module.exports = {
         npmPublish: true,
         pkgRoot: 'dist',
         allowSameVersion: true
-      }
-    ],
-    [
-      '@semantic-release/git',
-      {
-        assets: ['CHANGELOG.md', 'package.json', 'package-lock.json'],
-        message:
-          'chore(🤖):${nextRelease.version} [skip ci]\n\n${nextRelease.notes}'
-      }
-    ],
-    [
-      '@semantic-release/github',
-      {
-        // assets: 'dist/!*.tgz'
       }
     ]
   ]

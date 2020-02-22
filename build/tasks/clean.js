@@ -4,9 +4,9 @@
  */
 
 const Gulp = require('gulp');
-const Del = require('del');
+const Rimraf = require('rimraf');
 
 Gulp.task('clean', async function() {
   const ENV = require('../env')();
-  await Del(ENV.outputPath, { force: true });
+  Rimraf.sync(ENV.outputPath);
 });

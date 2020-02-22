@@ -26,9 +26,9 @@
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "release": "semantic-release",
     "clean": "gulp clean --gulpfile build/gulpfile.js",
     "build": "gulp build --gulpfile build/gulpfile.js",
+    "release": "semantic-release",
     "commit": "npx git cz",
     "lint": "lint-staged",
     "test": "nyc mocha"
@@ -36,8 +36,14 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
+    "@fatesigner/cz-customizable": "6.3.0",
     "@semantic-release/changelog": "5.0.0",
     "@semantic-release/git": "9.0.0",
+    "@types/chai": "4.2.9",
+    "@types/gulp": "4.0.6",
+    "@types/jest": "25.1.3",
+    "@types/mocha": "7.0.1",
+    "@types/node": "13.7.4",
     "@typescript-eslint/eslint-plugin": "2.7.0",
     "@typescript-eslint/parser": "2.7.0",
     "@vue/eslint-config-prettier": "5.0.0",
@@ -45,7 +51,7 @@
     "babel-eslint": "10.0.3",
     "chai": "4.2.0",
     "codecov": "3.6.1",
-    "commitizen": "4.0.3",
+    "commitizen": "^4.0.3",
     "cz-customizable": "6.2.0",
     "del": "5.1.0",
     "eslint": "6.6.0",
@@ -59,19 +65,20 @@
     "eslint-plugin-standard": "4.0.1",
     "find-config": "1.0.0",
     "gulp": "4.0.2",
-    "husky": "4.2.1",
-    "lint-staged": "10.0.3",
-    "mocha": "6.2.2",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.7",
+    "mocha": "7.0.1",
     "mochawesome": "4.1.0",
-    "nyc": "14.1.1",
-    "prettier": "1.19.1",
+    "nyc": "15.0.0",
     "require-dir": "1.2.0",
-    "semantic-release": "17.0.2",
-    "through2": "3.0.1"
+    "rimraf": "3.0.2",
+    "semantic-release": "17.0.4",
+    "through2": "3.0.1",
+    "travis": "0.1.1"
   },
   "config": {
     "commitizen": {
-      "path": "./scripts/cz-customizable"
+      "path": "./node_modules/@fatesigner/cz-customizable"
     }
   }
 }

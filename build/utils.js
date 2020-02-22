@@ -15,10 +15,7 @@ exports.NODE_ENV_ENUM = {
 exports.GetNODE_ENV = function() {
   const env = (process.env.NODE_ENV || exports.NODE_ENV_ENUM.DEV).trim();
   for (const v in exports.NODE_ENV_ENUM) {
-    if (
-      Object.prototype.hasOwnProperty.call(exports.NODE_ENV_ENUM, v) &&
-      env === exports.NODE_ENV_ENUM[v]
-    ) {
+    if (Object.prototype.hasOwnProperty.call(exports.NODE_ENV_ENUM, v) && env === exports.NODE_ENV_ENUM[v]) {
       return env;
     }
   }

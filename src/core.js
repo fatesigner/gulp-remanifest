@@ -28,13 +28,7 @@ function Replace(renames, contents, matched) {
       contents = matched(contents, rename.unreved, rename.reved);
     } else {
       contents = contents.replace(
-        new RegExp(
-          key_.split('/').join('/') +
-            '(\\.([A-Za-z0-9.]{5,}))?' +
-            extname +
-            '(s{0,})?(["|\'])',
-          'gim'
-        ),
+        new RegExp(key_.split('/').join('/') + '(\\.([A-Za-z0-9.]{5,}))?' + extname + '(s{0,})?(["|\'])', 'gim'),
         rename.reved + '$3$4'
       );
     }
@@ -50,10 +44,7 @@ function Replace(renames, contents, matched) {
       _contents[3].toString(16).toLowerCase() === 'bf'
     )
   ) {
-    _contents = Buffer.concat(
-      [Buffer.from(bomTag), _contents],
-      _contents.length + 3
-    );
+    _contents = Buffer.concat([Buffer.from(bomTag), _contents], _contents.length + 3);
   }
   return _contents;
 }
